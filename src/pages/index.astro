@@ -1,0 +1,94 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base>
+  <!-- Nav -->
+  <header class="w-full px-6 py-6 flex items-center justify-between max-w-5xl mx-auto">
+    <span class="font-cinzel text-lg tracking-wide text-brown-dark">Glade <span class="text-terracotta">&</span> Grotto</span>
+    <nav class="flex gap-6 text-sm font-inter text-brown-mid">
+      <a href="#about" class="hover:text-terracotta transition-colors">About</a>
+      <a href="#work" class="hover:text-terracotta transition-colors">Our Work</a>
+      <a href="#contact" class="hover:text-terracotta transition-colors">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="max-w-5xl mx-auto px-6 pt-16 pb-24 text-center">
+    <p class="font-inter text-xs tracking-[0.2em] uppercase text-terracotta mb-4">A small creative studio</p>
+    <h1 class="font-cinzel text-4xl md:text-6xl text-brown-dark leading-tight mb-6">
+      Crafted with<br />care and intention
+    </h1>
+    <p class="font-crimson text-xl text-brown-mid max-w-xl mx-auto leading-relaxed">
+      We bring cottagecore and adjacent aesthetics to thoughtfully made apps, games, and digital experiences. Quiet things, made well.
+    </p>
+    <div class="mt-10 w-16 h-px bg-border mx-auto"></div>
+  </section>
+
+  <!-- Divider leaf -->
+  <div class="flex justify-center mb-20 text-forest opacity-50 text-2xl select-none">❧</div>
+
+  <!-- About -->
+  <section id="about" class="max-w-3xl mx-auto px-6 pb-28">
+    <h2 class="font-cinzel text-2xl text-brown-dark mb-6 text-center">What We Do</h2>
+    <div class="bg-surface rounded-2xl border border-border p-8 md:p-12 shadow-sm">
+      <p class="font-crimson text-lg text-brown-dark leading-relaxed mb-5">
+        Glade &amp; Grotto is a publishing studio focused on the gentle, the handcrafted, and the unhurried. We make things that feel good to spend time with.
+      </p>
+      <p class="font-crimson text-lg text-brown-dark leading-relaxed mb-5">
+        Right now, our work lives in apps and games. We use AI thoughtfully to assist with art and production, with the goal of collaborating with independent artists on future projects.
+      </p>
+      <p class="font-crimson text-lg italic text-brown-mid leading-relaxed">
+        We believe good design doesn't need to be loud. Sometimes the best thing a product can do is make you feel at home.
+      </p>
+    </div>
+  </section>
+
+  <!-- Our Work -->
+  <section id="work" class="max-w-5xl mx-auto px-6 pb-28">
+    <h2 class="font-cinzel text-2xl text-brown-dark mb-10 text-center">Our Work</h2>
+    <div class="grid md:grid-cols-1 gap-6 max-w-2xl mx-auto">
+      <!-- Idle Grove card -->
+      <div class="bg-surface rounded-2xl border border-border shadow-sm overflow-hidden flex flex-col md:flex-row">
+        <div class="bg-forest/10 flex items-center justify-center p-10 md:p-12 md:w-48 shrink-0">
+          <span class="text-5xl">🌿</span>
+        </div>
+        <div class="p-8">
+          <div class="flex items-center gap-3 mb-2">
+            <h3 class="font-cinzel text-xl text-brown-dark">Idle Grove</h3>
+            <span class="font-inter text-xs bg-forest/20 text-forest px-2 py-0.5 rounded-full">In Development</span>
+          </div>
+          <p class="font-inter text-xs text-brown-mid uppercase tracking-wider mb-3">Mobile Game</p>
+          <p class="font-crimson text-base text-brown-dark leading-relaxed">
+            A cozy idle RPG set in a cottagecore wilderness. Build a settlement from a campfire to a thriving village. One skill at a time, resources accumulate while you rest.
+          </p>
+        </div>
+      </div>
+    </div>
+    <p class="text-center font-crimson text-brown-mid italic mt-10">More to come.</p>
+  </section>
+
+  <!-- Divider -->
+  <div class="flex justify-center mb-20 text-forest opacity-50 text-2xl select-none">❧</div>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-3xl mx-auto px-6 pb-28 text-center">
+    <h2 class="font-cinzel text-2xl text-brown-dark mb-4">Say Hello</h2>
+    <p class="font-crimson text-lg text-brown-mid leading-relaxed mb-6">
+      We'd love to hear from artists, collaborators, or anyone who shares a love of quiet, intentional craft.
+    </p>
+    <a
+      href="mailto:hello@gladeandgrotto.com"
+      class="inline-block font-inter text-sm bg-terracotta text-parchment px-8 py-3 rounded-xl hover:bg-terracotta/90 active:scale-[0.97] transition-all"
+    >
+      hello@gladeandgrotto.com
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-border py-8 px-6 text-center">
+    <p class="font-inter text-xs text-brown-mid">
+      &copy; {new Date().getFullYear()} Glade &amp; Grotto. All rights reserved.
+    </p>
+  </footer>
+</Base>
