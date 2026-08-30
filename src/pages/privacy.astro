@@ -1,0 +1,123 @@
+---
+import Base from '../layouts/Base.astro';
+
+const lastUpdated = 'August 30, 2026';
+---
+
+<Base title="Privacy Policy — Glade & Grotto" description="Privacy policy for Idle Grove and other Glade & Grotto apps.">
+  <!-- Nav -->
+  <header class="w-full px-6 py-6 flex items-center justify-between max-w-5xl mx-auto">
+    <a href="/" class="font-cinzel text-lg tracking-wide text-brown-dark">Glade <span class="text-terracotta">&</span> Grotto</a>
+    <nav class="flex gap-6 text-sm font-inter text-brown-mid">
+      <a href="/#about" class="hover:text-terracotta transition-colors">About</a>
+      <a href="/#work" class="hover:text-terracotta transition-colors">Our Work</a>
+      <a href="/#contact" class="hover:text-terracotta transition-colors">Contact</a>
+    </nav>
+  </header>
+
+  <section class="max-w-3xl mx-auto px-6 pt-8 pb-28">
+    <p class="font-inter text-xs tracking-[0.2em] uppercase text-terracotta mb-4">Legal</p>
+    <h1 class="font-cinzel text-3xl md:text-4xl text-brown-dark leading-tight mb-3">Privacy Policy</h1>
+    <p class="font-inter text-sm text-brown-mid mb-10">Last updated {lastUpdated}</p>
+
+    <div class="bg-surface rounded-2xl border border-border p-8 md:p-12 shadow-sm font-crimson text-brown-dark leading-relaxed space-y-8">
+      <p>
+        This policy covers Idle Grove and other apps and games published by Glade &amp; Grotto ("we," "us"). It explains
+        what information we collect, why, and how you can control it. We keep this plain-language on purpose — if
+        anything here is unclear, email us at
+        <a href="mailto:hello@gladeandgrotto.com" class="text-terracotta hover:underline">hello@gladeandgrotto.com</a>
+        and we'll clarify.
+      </p>
+
+      <div>
+        <h2 class="font-cinzel text-xl text-brown-dark mb-3">Information We Collect</h2>
+        <p class="mb-3">When you create an account and play, we collect:</p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li><strong>Account information</strong> — your email address, and if you sign in with Google, your Google account's basic profile info (name, email, profile photo).</li>
+          <li><strong>Gameplay data</strong> — your character, inventory, progress, and any content you create in-game (e.g. a grove name, chat/trade activity with other players).</li>
+          <li><strong>Device and usage data</strong> — basic technical information like device type and app version, used for debugging and stability, not for tracking or advertising.</li>
+        </ul>
+        <p class="mt-3">
+          We do not collect precise location, contacts, photos, or any device data beyond what's needed to run the game
+          and keep your save synced across devices.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-cinzel text-xl text-brown-dark mb-3">How We Use It</h2>
+        <ul class="list-disc pl-6 space-y-2">
+          <li>To create and secure your account, and sync your save across devices.</li>
+          <li>To operate multiplayer features (groves, trading, parties) — this means other players in your grove or party can see your in-game username and activity.</li>
+          <li>To respond to support requests and bug reports.</li>
+          <li>To fix bugs and improve the game.</li>
+        </ul>
+        <p class="mt-3">
+          We do not sell your personal information, and we do not use it for third-party advertising. The app currently
+          contains no ads.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-cinzel text-xl text-brown-dark mb-3">Third-Party Services</h2>
+        <p class="mb-3">We rely on a small number of trusted services to run the game:</p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li><strong>Supabase</strong> — our backend provider, hosting your account and gameplay data.</li>
+          <li><strong>Google Sign-In</strong> — if you choose to sign in with Google, subject to Google's own privacy policy.</li>
+          <li><strong>Stripe</strong> — if and when in-app purchases are enabled, payment processing will be handled entirely by Stripe; we do not see or store your card details.</li>
+        </ul>
+        <p class="mt-3">Each of these providers processes data only as needed to provide their service to us.</p>
+      </div>
+
+      <div>
+        <h2 class="font-cinzel text-xl text-brown-dark mb-3">Data Retention &amp; Deletion</h2>
+        <p>
+          We keep your account and gameplay data for as long as your account is active. You can request deletion of
+          your account and all associated data at any time by emailing
+          <a href="mailto:hello@gladeandgrotto.com" class="text-terracotta hover:underline">hello@gladeandgrotto.com</a>
+          — we'll process the request promptly and confirm once it's done.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-cinzel text-xl text-brown-dark mb-3">Children's Privacy</h2>
+        <p>
+          Idle Grove is not directed at children under 13, and we do not knowingly collect personal information from
+          children under 13. If you believe a child has provided us with personal information, contact us and we will
+          delete it.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-cinzel text-xl text-brown-dark mb-3">Security</h2>
+        <p>
+          We take reasonable measures to protect your information, including encrypting data in transit. No method of
+          transmission or storage is 100% secure, but we work to keep your data safe and will notify affected users in
+          the event of a significant breach.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-cinzel text-xl text-brown-dark mb-3">Changes to This Policy</h2>
+        <p>
+          If this policy changes in a meaningful way, we'll update the date at the top of this page and, where
+          appropriate, notify you in-app.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-cinzel text-xl text-brown-dark mb-3">Contact</h2>
+        <p>
+          Questions, requests, or concerns about your data:
+          <a href="mailto:hello@gladeandgrotto.com" class="text-terracotta hover:underline">hello@gladeandgrotto.com</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-border py-8 px-6 text-center">
+    <p class="font-inter text-xs text-brown-mid">
+      &copy; {new Date().getFullYear()} Glade &amp; Grotto. All rights reserved.
+    </p>
+  </footer>
+</Base>
