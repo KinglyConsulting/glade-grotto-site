@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 
-const lastUpdated = 'August 30, 2026';
+const lastUpdated = 'August 30, 2026 (revised)';
 ---
 
 <Base title="Privacy Policy — Glade & Grotto" description="Privacy policy for Idle Grove and other Glade & Grotto apps.">
@@ -35,11 +35,10 @@ const lastUpdated = 'August 30, 2026';
         <ul class="list-disc pl-6 space-y-2">
           <li><strong>Account information</strong> — your email address, and if you sign in with Google, your Google account's basic profile info (name, email, profile photo).</li>
           <li><strong>Gameplay data</strong> — your character, inventory, progress, and any content you create in-game (e.g. a grove name, chat/trade activity with other players).</li>
-          <li><strong>Device and usage data</strong> — basic technical information like device type and app version, used for debugging and stability, not for tracking or advertising.</li>
+          <li><strong>Basic analytics</strong> — page views, visit duration, referring source, device type, and approximate location (country-level, derived from IP address). This is standard aggregate site analytics; we don't use it to build a profile of you or track you across other apps or websites.</li>
         </ul>
         <p class="mt-3">
-          We do not collect precise location, contacts, photos, or any device data beyond what's needed to run the game
-          and keep your save synced across devices.
+          We do not collect precise location, contacts, photos, or any device data beyond what's described above.
         </p>
       </div>
 
@@ -64,6 +63,7 @@ const lastUpdated = 'August 30, 2026';
           <li><strong>Supabase</strong> — our backend provider, hosting your account and gameplay data.</li>
           <li><strong>Google Sign-In</strong> — if you choose to sign in with Google, subject to Google's own privacy policy.</li>
           <li><strong>Stripe</strong> — if and when in-app purchases are enabled, payment processing will be handled entirely by Stripe; we do not see or store your card details.</li>
+          <li><strong>Lovable</strong> — our development platform, whose built-in analytics collects the aggregate site-usage data described above (page views, approximate location, device type).</li>
         </ul>
         <p class="mt-3">Each of these providers processes data only as needed to provide their service to us.</p>
       </div>
